@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+<div class="navbar navbar-default">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse"  >
+        <ul class="nav navbar-nav navbar-right">
+             <li><a href="#" id="logout" style="display: none;">Log Out</a></li>
+        </ul>
+    </div>
+    </div>
+    <br>
+    <div class="container">	
+      <form name="registration_form" id="registration_form" method="post" action="#" enctype="multipart/form-data" >
+      <div class="row">
+    
+        <div class="col-sm-4">
+            <div class="form-group">
+              <label for="name">Username</label>
+              <input type="text" name="username" id="name" placeholder="Username"><br>
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" class="form-control" placeholder="Enter your email">
+            </div>
+            
+            <div class="form-group">
+              <label for="password" >Password</label>
+              <input type="password" name="password" id="password" class="form-control"  placeholder="Enter your password">
+            </div>
+            <button type="button" id="register" name="register" class="btn btn-success">Register Now</button>
+        </div><!-- end col -->
+        </form>
+
+        <form name="login_form" id="login_form" method="post" action="#" enctype="multipart/form-data" >
+        <div class="col-sm-4">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" name="login_email" id="login_email" class="form-control" placeholder="Enter your email">
+            </div>
+            
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" name="login_password" id="login_password" class="form-control"  placeholder="Enter your password">
+            </div>
+            <button type="button" id="login" name="login" class="btn btn-success">Login</button>
+        </div><!-- end col -->
+        
+      </div><!--  end row -->		
+      </form>
+    </div>
+    <br>
+</body>
+
+<script type="module" src="login.js"></script>
+
+</html>
